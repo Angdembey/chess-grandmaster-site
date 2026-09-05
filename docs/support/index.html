@@ -4,21 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Support - Chess Grandmaster</title>
-    <meta name="description" content="Support and FAQ for Chess Grandmaster.">
+    <meta name="description" content="Version 1.2 support, Game Review help, purchase guidance, and FAQ for Chess Grandmaster AI.">
+    <link rel="icon" type="image/png" href="../assets/app-icon.png">
+    <link rel="apple-touch-icon" href="../assets/app-icon.png">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
     <div class="page">
-      <header>
-        <p class="eyebrow">Chess Grandmaster</p>
-        <h1>Support</h1>
-        <p class="summary">
-          Help, purchases, FAQ, and contact information for Chess Grandmaster AI.
-        </p>
-        <nav aria-label="Site navigation">
-          <a href="../">Home</a>
-          <a href="../privacy/">Privacy Policy</a>
-        </nav>
+      <header class="support-hero">
+        <div class="support-hero-copy">
+          <p class="eyebrow">Chess Grandmaster</p>
+          <h1>Support</h1>
+          <p class="summary">
+            Help, purchases, FAQ, and contact information for Chess Grandmaster AI.
+          </p>
+          <nav aria-label="Site navigation">
+            <a href="../">Home</a>
+            <a href="../privacy/">Privacy Policy</a>
+          </nav>
+        </div>
+        <a class="support-app-icon" href="../" aria-label="Visit the Chess Grandmaster AI home page">
+          <img src="../assets/app-icon.png" alt="Chess Grandmaster AI app icon" width="512" height="512">
+        </a>
       </header>
 
       <main>
@@ -33,14 +40,104 @@
         <section>
           <h2>About This Release</h2>
           <p>
-            Chess Grandmaster AI version 1.1 is an offline chess practice and study app. You can play against built-in chess-engine logic or use Watch and Learn to observe chess engines play automatically.
+            Chess Grandmaster AI version 1.2 is an offline chess practice, review, and study app. You can play against built-in chess-engine logic, use Watch and Learn to observe engines play automatically, and review a completed local game move by move.
           </p>
+        </section>
+
+        <section>
+          <h2>What&apos;s New in Version 1.2</h2>
+          <ul>
+            <li>Premium Game Review with a move-by-move board, navigation controls, progress, summary counts, and results by side.</li>
+            <li>Confidence-aware labels that use Insufficient depth instead of assigning an overconfident result when local analysis cannot verify enough.</li>
+            <li>Share and Print for review summaries, plus optional Copy and Export File actions for review diagnostics.</li>
+            <li>Replay Same Setup for another game with the same local players, sides, AI strength, depth, and options.</li>
+            <li>A strengthened local engine with improved tactical safety, captures and trades, repetition avoidance, promotion choices, and king-and-major-piece endgame conversion.</li>
+            <li>Deterministic Premium depth settings for more consistent practice and repeat testing.</li>
+          </ul>
+          <p>
+            The built-in engine is designed for offline practice and study. Its suggestions and review labels are not guaranteed perfect tournament play.
+          </p>
+        </section>
+
+        <section class="release-media" aria-labelledby="release-media-title">
+          <p class="eyebrow dark">Version 1.2 previews</p>
+          <h2 id="release-media-title">See offline play and Game Review in action</h2>
+          <p>
+            Explore the current phone and tablet experience, including Premium AI strengths, active engine play, move-by-move review, and the results-by-side summary.
+          </p>
+
+          <div class="release-video-layout">
+            <div class="release-video-copy">
+              <h3>Active engine play on iPhone</h3>
+              <p>
+                This silent preview shows a local game in progress with the engine plan, last move, history, capture box, and board controls visible on one screen.
+              </p>
+            </div>
+            <figure class="release-video-frame">
+              <video controls playsinline preload="metadata" poster="../assets/media/v1.2/iphone-active-play-v12-poster.jpg" aria-label="Chess Grandmaster AI active engine play on iPhone">
+                <source src="../assets/media/v1.2/iphone-active-play-v12.mp4" type="video/mp4">
+                Your browser does not support embedded MP4 video.
+              </video>
+              <figcaption>Local chess-engine play stays on the device.</figcaption>
+            </figure>
+          </div>
+
+          <h3>On iPhone</h3>
+          <div class="release-gallery release-gallery-phone" aria-label="Chess Grandmaster AI version 1.2 on iPhone">
+            <figure class="release-shot phone-shot">
+              <a href="../assets/media/v1.2/iphone-game-review-summary-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/iphone-game-review-summary-v12.jpg" alt="Game Review summary on iPhone with move-quality totals and results by side" width="1320" height="2868" loading="lazy">
+              </a>
+              <figcaption>Game Review summary</figcaption>
+            </figure>
+            <figure class="release-shot phone-shot">
+              <a href="../assets/media/v1.2/iphone-game-review-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/iphone-game-review-v12.jpg" alt="Move-by-move Game Review board on iPhone with navigation and analysis guidance" width="1320" height="2868" loading="lazy">
+              </a>
+              <figcaption>Move-by-move review</figcaption>
+            </figure>
+            <figure class="release-shot phone-shot">
+              <a href="../assets/media/v1.2/iphone-active-play-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/iphone-active-play-v12.jpg" alt="Tournament AI game in progress on iPhone with engine plan and play controls" width="1320" height="2868" loading="lazy">
+              </a>
+              <figcaption>Active engine play</figcaption>
+            </figure>
+            <figure class="release-shot phone-shot">
+              <a href="../assets/media/v1.2/iphone-ai-strengths-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/iphone-ai-strengths-v12.jpg" alt="AI strength selection on iPhone showing free and Premium levels" width="1320" height="2868" loading="lazy">
+              </a>
+              <figcaption>Six AI strengths</figcaption>
+            </figure>
+          </div>
+
+          <h3>On iPad</h3>
+          <div class="release-gallery release-gallery-tablet" aria-label="Chess Grandmaster AI version 1.2 on iPad">
+            <figure class="release-shot tablet-shot">
+              <a href="../assets/media/v1.2/ipad-game-review-summary-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/ipad-game-review-summary-v12.jpg" alt="Game Review results-by-side summary on iPad" width="2064" height="2752" loading="lazy">
+              </a>
+              <figcaption>Expanded review summary</figcaption>
+            </figure>
+            <figure class="release-shot tablet-shot">
+              <a href="../assets/media/v1.2/ipad-active-play-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/ipad-active-play-v12.jpg" alt="Master AI chess game in progress on iPad" width="2064" height="2752" loading="lazy">
+              </a>
+              <figcaption>Tablet board and controls</figcaption>
+            </figure>
+            <figure class="release-shot tablet-shot">
+              <a href="../assets/media/v1.2/ipad-ai-strengths-v12.jpg" target="_blank" rel="noreferrer">
+                <img src="../assets/media/v1.2/ipad-ai-strengths-v12.jpg" alt="AI strength and search-depth selection on iPad" width="2064" height="2752" loading="lazy">
+              </a>
+              <figcaption>Strength and depth choices</figcaption>
+            </figure>
+          </div>
+          <p class="media-note">Select any screenshot to open the full-size image.</p>
         </section>
 
         <section>
           <h2>Premium Unlock</h2>
           <p>
-            Beginner and Club AI levels are available without purchase. Premium Unlock is an optional, one-time, non-consumable in-app purchase that unlocks Tournament, Master, Grandmaster, and Maximum AI levels in Play with Chess Engine and Watch and Learn. It is not a subscription.
+            Beginner and Club AI levels are available without purchase. Premium Unlock is an optional, one-time, non-consumable in-app purchase that unlocks Game Review plus Tournament, Master, Grandmaster, and Maximum AI levels in Play with Chess Engine and Watch and Learn. It is not a subscription.
           </p>
 
           <h3>How do I purchase Premium Unlock?</h3>
@@ -81,29 +178,41 @@
         <section>
           <h2>Frequently Asked Questions</h2>
           <h3>Can I play offline?</h3>
-          <p>Yes. Version 1.1 supports offline play on this device. An internet connection is needed when purchasing or restoring Premium Unlock through the applicable app store.</p>
+          <p>Yes. Version 1.2 games and Game Review run locally on this device. An internet connection is needed for store actions such as purchasing or restoring Premium Unlock, or when you choose to open an external support or update page.</p>
+
+          <h3>How do I review a completed game?</h3>
+          <p>At the game result, choose Review Game. Premium Unlock is required. The first review analyzes the game locally and may take some time; a completed cached review opens faster later.</p>
+
+          <h3>What does Insufficient depth mean?</h3>
+          <p>The bounded local search did not verify enough of that position to assign a confident move-quality label. It does not mean that the move was necessarily good or bad.</p>
+
+          <h3>Can I cancel Game Review?</h3>
+          <p>Yes. Choose Cancel while analysis is running. Your completed game and its played moves are not changed.</p>
+
+          <h3>What is in a Review Diagnostic export?</h3>
+          <p>It contains the reviewed game&apos;s moves, positions, engine settings, search results, and timing details. It is created locally and leaves the device only when you choose Copy or Export File.</p>
+
+          <h3>Why can Game Review or stronger AI take longer?</h3>
+          <p>Complex positions and higher depth settings require more local calculation. Analysis time varies by game length, position, depth, and device performance.</p>
 
           <h3>Do I need an account?</h3>
           <p>No. Accounts are not required for this release.</p>
 
           <h3>Does this release include live online play?</h3>
-          <p>No. Version 1.1 does not enable live play, chat, player queues, accounts, or player-to-player challenges.</p>
-
-          <h3>Why does stronger AI take longer?</h3>
-          <p>Stronger AI levels calculate deeper tactical lines before moving.</p>
+          <p>No. Version 1.2 does not enable live play, chat, player queues, accounts, or player-to-player challenges.</p>
 
           <h3>Where do I change board themes or pieces?</h3>
           <p>Open Menu, then Settings. Theme, piece style, avatars, music, sounds, and timers can be adjusted there.</p>
 
           <h3>Does the app show ads?</h3>
-          <p>No. Version 1.1 does not include advertising.</p>
+          <p>No. Version 1.2 does not include advertising.</p>
         </section>
 
         <section>
           <h2>App Information</h2>
           <ul>
             <li>App Name: Chess Grandmaster AI</li>
-            <li>Version: 1.1</li>
+            <li>Version: 1.2</li>
             <li>Provider: Dhana Angdembey</li>
           </ul>
         </section>
