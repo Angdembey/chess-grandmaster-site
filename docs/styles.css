@@ -346,16 +346,39 @@ footer {
 }
 
 .hero-download-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 0.8rem;
-  align-items: center;
   margin-top: 1.4rem;
 }
 
 .hero-download-row .app-store-button {
-  flex: 0 0 auto;
   margin-top: 0;
+}
+
+.store-buttons,
+.hero-qr-options,
+.download-qr-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.google-play-mark {
+  display: grid;
+  flex: 0 0 2rem;
+  place-items: center;
+}
+
+.google-play-mark svg {
+  display: block;
+  width: 1.8rem;
+  height: 2rem;
+}
+
+body[data-platform="android"] .store-option-ios,
+body[data-platform="ios"] .store-option-android {
+  display: none;
 }
 
 .hero-icon {
@@ -541,8 +564,15 @@ footer {
 .download-card h2 { max-width: 13ch; color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); }
 .download-card p:not(.eyebrow) { max-width: 48ch; color: rgba(255,255,255,0.76); }
 .app-store-button.light { border-color: #fff; }
+.download-buttons { margin-top: 1.4rem; }
+.download-buttons .app-store-button { margin-top: 0; }
+.download-qr-options { justify-content: end; }
 .qr-wrap { display: grid; gap: 0.45rem; place-items: center; padding: 0.7rem 0.7rem 0.55rem; border-radius: 15px; background: #fff; color: var(--ink); font-size: 0.72rem; font-weight: 800; text-decoration: none; }
 .qr-wrap img { display: block; width: 210px; height: auto; }
+.qr-caption,
+.qr-caption strong,
+.qr-caption small { display: block; text-align: center; }
+.qr-caption small { color: var(--muted); font-weight: 650; }
 
 @media (max-width: 720px) {
   .support-hero {
@@ -597,7 +627,8 @@ footer {
   .phone-preview { min-height: 460px; scroll-snap-align: center; }
   .phone-preview:nth-child(2) { transform: none; }
   .download-card { grid-template-columns: 1fr; }
-  .qr-wrap { justify-self: start; }
+  .hero-qr-options,
+  .download-qr-options { display: none; }
 }
 
 @media (max-width: 560px) {
