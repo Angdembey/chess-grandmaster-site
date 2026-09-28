@@ -515,6 +515,40 @@ body[data-platform="ios"] .store-option-android {
   height: auto;
 }
 
+.promo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.promo-feature {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 91, 80, 0.22);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 20px 42px rgba(16, 36, 33, 0.14);
+}
+
+.promo-feature img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.promo-feature figcaption {
+  margin: 0;
+  padding: 1rem 1.1rem 1.15rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.promo-feature figcaption strong {
+  color: var(--ink);
+}
+
 .phone-preview {
   min-height: 500px;
   padding: 1rem;
@@ -624,6 +658,7 @@ body[data-platform="ios"] .store-option-android {
   }
 
   .screen-gallery { grid-template-columns: repeat(6, 245px); }
+  .promo-gallery { grid-template-columns: 1fr; }
   .phone-preview { min-height: 460px; scroll-snap-align: center; }
   .phone-preview:nth-child(2) { transform: none; }
   .download-card { grid-template-columns: 1fr; }
