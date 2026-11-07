@@ -693,3 +693,38 @@ body[data-platform="ios"] .store-option-android {
     padding: 1rem;
   }
 }
+
+/* Version 1.3 release additions. */
+.tier-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.tier-grid article { min-width: 0; padding: 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--soft); }
+.tier-grid h3 { margin-top: 0; }
+.tier-grid ul { padding-left: 1.2rem; }
+.about-app-card { border-left: 5px solid var(--brand); background: color-mix(in srgb, var(--brand) 5%, white); font-style: italic; font-weight: 750; overflow-wrap: anywhere; }
+.about-app-card h2 { display: flex; align-items: center; gap: 0.75rem; }
+.about-app-card img { flex: 0 0 48px; border-radius: 10px; }
+.about-app-version { color: var(--muted); }
+.responsive-previews { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); align-items: start; gap: 1rem; }
+.responsive-previews figure { min-width: 0; margin: 0; }
+.responsive-previews figure:first-child { grid-row: span 2; }
+.responsive-previews img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+.responsive-previews figcaption { padding: 0.5rem 0; color: var(--muted); }
+@media (max-width: 720px) { .tier-grid, .responsive-previews { grid-template-columns: minmax(0, 1fr); } .responsive-previews figure:first-child { grid-row: auto; max-width: 350px; justify-self: center; } }
+
+.shot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.shot-grid figure { min-width: 0; margin: 0; }
+.shot-grid img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+.shot-grid figcaption { padding: 0.5rem 0; color: var(--muted); }
+@media (max-width: 720px) { .shot-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Keyboard access and narrow-screen support for the release pages. */
+.skip-link { position: absolute; left: 1rem; top: -8rem; z-index: 10; padding: .75rem 1rem; background: white; color: var(--brand); border-radius: .5rem; }
+.skip-link:focus { top: 1rem; }
+a:focus-visible, video:focus-visible { outline: 3px solid #b54b10; outline-offset: 4px; }
+.contact-card a { overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+@media (max-width: 420px) {
+  .support-hero { grid-template-columns: minmax(0, 1fr); padding: 1.25rem; }
+  .support-app-icon { width: 80px; }
+  .hero-mini-qr, .download-card, .download-copy { min-width: 0; }
+}

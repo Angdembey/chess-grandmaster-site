@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://angdembey.github.io/chess-grandmaster-site/sitemap.xml
